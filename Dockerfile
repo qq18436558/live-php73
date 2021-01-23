@@ -28,8 +28,6 @@ RUN apt update && DEBIAN_FRONTEND=noninteractive apt-get install -y wget tzdata 
 
 EXPOSE 9000
 
-COPY php-fpm.conf /etc/php/7.3/fpm/php-fpm.conf
-
 COPY resources/etc/ /etc/
 
 ENTRYPOINT ["/init"]
